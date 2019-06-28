@@ -32,8 +32,16 @@ window.onload = function(event) {
 		}
 	}
 
-	function toggle() {
-		
+	function toggle(chevron) {
+		let task = document.getElementById("task");
+
+		if (Array.from(chevron.classList).indexOf("fa-chevron-up") === -1) {
+			chevron.classList.remove("fa-chevron-down");
+			chevron.classList.add("fa-chevron-up");
+		} else {
+			chevron.classList.remove("fa-chevron-up");
+			chevron.classList.add("fa-chevron-down");
+		}
 	}
 
 	let form = document.getElementById("form");
@@ -43,8 +51,8 @@ window.onload = function(event) {
 		titleCase(this.children[0].value);
 	});
 
-	let chevron = document.getElementById("chevron");
+	let chevron = document.getElementsByClassName("fas")[0];
 	chevron.addEventListener("click", function(event) {
-		toggle();
+		toggle(this);
 	});
 };
