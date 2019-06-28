@@ -59,3 +59,36 @@ header {
 
 
 /* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	padding: 1vh 0;
+	background-color: #F08C01;
+	font-size: 1.1em;
+}
+
+.more-link {
+	color: black;
+}
+
+.more-link:active {
+	color: #00B5ED !important;
+}
+
+.more-link:hover {
+	color: #FDDB00;
+}
+
+#copyright {
+	display: block;
+}
+
+#more {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	padding: 0.5vh 0 0;
+	font-size: 1.2em;
+}
