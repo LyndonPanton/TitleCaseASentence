@@ -32,10 +32,19 @@ window.onload = function(event) {
 		}
 	}
 
+	function toggle() {
+		
+	}
+
 	let form = document.getElementById("form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
 
 		titleCase(this.children[0].value);
+	});
+
+	let chevron = document.getElementById("chevron");
+	chevron.addEventListener("click", function(event) {
+		toggle();
 	});
 };
