@@ -10,7 +10,6 @@ body, html {
 	background-color: #23207C;
 	text-align: center;
 	letter-spacing: 1px;
-	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 	font-family: Papyrus, fantasy;
 	font-size: 16px;
 	color: white;
@@ -55,6 +54,46 @@ header {
 
 
 /* MAIN */
+main {
+	padding-top: 15vh;
+}
+
+input {
+	display: block;
+	margin: 2vh auto;
+}
+
+#form-string {
+	border: none;
+	border-bottom: 1px white solid;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 1em;
+	color: white;
+}
+
+#form-string::placeholder {
+	opacity: 0.8;
+	text-align: center;
+	font-style: italic; 
+	color: white;
+}
+
+#form-submit {
+	border: 2px #FDDB00 solid;
+	border-radius: 5px;
+	padding: 1vh 4vw;
+	background-color: #00B5ED;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 1em;
+}
+
+#form-submit:active {
+	border-color: #F08C01;
+	background-color: #D6000A;
+	color: white;
+}
 
 
 
