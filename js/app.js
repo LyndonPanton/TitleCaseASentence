@@ -13,7 +13,7 @@ window.onload = function(event) {
 		// if (string === "") {
 		// 	display("???");
 		// } else {
-		// 	let arr = string.split(" ");
+		// 	let arr = string.trim().replace("  ", "").split(" ");
 		// 	arr.forEach(function(value, index) {
 		// 		arr[index] = arr[index][0].toUpperCase() + arr[index].slice(1).toLowerCase();
 		// 	});
@@ -26,7 +26,7 @@ window.onload = function(event) {
 		if (string === "") {
 			display("???");
 		} else {
-			display(string.split(" ").map(function(value, index) {
+			display(string.trim().replace("  ", "").split(" ").map(function(value, index) {
 						return value[0].toUpperCase() + value.slice(1).toLowerCase();
 					}).join(" "));
 		}
