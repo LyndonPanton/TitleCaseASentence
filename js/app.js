@@ -3,6 +3,10 @@
 window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function display(string) {
+		document.getElementById("display").textContent = string;
+	}
+
 	function titleCase(string) {
 		// Method I
 		// let arr = string.split(" ");
@@ -14,9 +18,9 @@ window.onload = function(event) {
 
 
 		// Method II
-		return string.split(" ").map(function(value, index) {
-			return value[0].toUpperCase() + value.slice(1).toLowerCase();
-		}).join(" ");
+		return display(string.split(" ").map(function(value, index) {
+					return value[0].toUpperCase() + value.slice(1).toLowerCase();
+				}).join(" "));
 	}
 
 	let form = document.getElementById("form");
